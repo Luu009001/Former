@@ -28,8 +28,8 @@ if __name__ == '__main__':
 
     # data loader
     parser.add_argument('--data', type=str, default='custom', help='dataset type')
-    parser.add_argument('--root_path', type=str, default='./long_term_forecast_l96/dataset/', help='root path of the data file')
-    parser.add_argument('--data_path', type=str, default='liugongdao.csv', help='data file')
+    parser.add_argument('--root_path', type=str, default='./dataset/', help='root path of the data file')
+    parser.add_argument('--data_path', type=str, default='luhaifeng.csv', help='data file')
     parser.add_argument('--features', type=str, default='MS',
                         help='forecasting task, options:[M, S, MS]; M:multivariate predict multivariate, S:univariate predict univariate, MS:multivariate predict univariate')
     parser.add_argument('--target', type=str, default='rjy', help='target feature in S or MS task')
